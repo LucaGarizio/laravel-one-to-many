@@ -9,9 +9,9 @@ class TypeController extends Controller
 {
     public function index(){
 
-        $type = Type ::all();
+        $types = Type ::all();
 
-        return view('pages.index', compact('type'));
+        return view('pages.index', compact('types'));
 
     }
 }
